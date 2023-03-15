@@ -39,8 +39,7 @@ input {
   height: 2.5rem;
   border-radius: 10px;
   font-size: 1rem;
-  color: #ffffff;
-  background: transparent;
+  /* background: transparent; */
   border: 1px solid orange;
   padding: 5px;
   margin: 20px;
@@ -69,24 +68,42 @@ select {
   border-radius: 10px;
 }
 
+.list {
+  padding: 1.5rem;
+}
+
 .item {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #fffff0;
+  height: fit-content;
+  width: fit-content;
+  -webkit-box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
-.list-items,
+#tasks,
 #complete-list,
 #pending-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  gap: 2rem;
 }
 
 #complete-list {
   display: none;
 }
+
 #pending-list {
   display: none;
 }

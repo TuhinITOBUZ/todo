@@ -12,17 +12,17 @@ document.querySelector("#current").addEventListener("change", (event) => {
     current = "pending";
     document.getElementById("tasks").style.display = "none";
     document.getElementById("complete-list").style.display = "none";
-    document.getElementById("pending-list").style.display = "block";
+    document.getElementById("pending-list").style.display = "flex";
     createPendingList();
   } else if (event.target.value === "complete") {
     current = "complete";
     document.getElementById("tasks").style.display = "none";
-    document.getElementById("complete-list").style.display = "block";
+    document.getElementById("complete-list").style.display = "flex";
     document.getElementById("pending-list").style.display = "none";
     createCompleteList();
   } else {
     current = "all";
-    document.getElementById("tasks").style.display = "block";
+    document.getElementById("tasks").style.display = "flex";
     document.getElementById("complete-list").style.display = "none";
     document.getElementById("pending-list").style.display = "none";
     create();
