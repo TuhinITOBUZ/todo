@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <div class="operations">
+      <input
+        id="userInput"
+        type="text"
+        placeholder="Enter your task here ... "
+      />
+      <button id="addItem">Add</button>
+      <button id="clearInput">Clear</button>
+      <button id="clearAll">Clear All</button>
+      <select id="current" value="">
+        select task type
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="complete">Completed</option>
+      </select>
+    </div>
+    <div class="list-items" id="tasks"></div>
+    <div id="complete-list">Complete List</div>
+    <div id="pending-list">Pending List</div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
